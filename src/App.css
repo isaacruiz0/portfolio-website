@@ -36,7 +36,10 @@
   background: rgba(53, 69, 64, .4);
   position:sticky;
   top: 0;
-  
+  transition: .25s ease-in-out;
+}
+.navigationBar.active{
+  background: rgba(53, 69, 64);
 }
 .navigationBar ul{
   width: fit-content;
@@ -180,4 +183,56 @@
 }
 .aboutTextGap{
   height: 2rem;
+}
+/* divider between about and skills */
+.divider{
+  width: 100%;
+  height:1.5px;
+  background-color: rgb(189, 188, 188);
+  grid-column: 1/3;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/* Skills Section */
+
+.mySkills{
+  background-color: ;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  background: rgba(53, 69, 64, .9);
+}
+.mySkills h1{
+  color: #F5F5DC;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;  
+  letter-spacing: .33em;
+  text-align: center;
+}
+.mySkills div{
+  display: flex;
+  justify-content: center;
+}
+#codingIcons{
+  display: flex;
+  justify-content: space-evenly;
+}
+.icons{
+  height: 2em; 
+  width: auto; 
+  transition:250ms;
+}
+
+.languages{
+  display: flex;
+  flex-direction: column;
+}
+.iconDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.iconDiv:hover{
+  transform: scale(1.5);
 }
