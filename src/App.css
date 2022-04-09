@@ -203,7 +203,7 @@
   grid-column: 1/3;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  background: rgba(53, 69, 64, .9);
+  height: auto;
 }
 .mySkills h1{
   color: #F5F5DC;
@@ -219,6 +219,7 @@
 #codingIcons{
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .icons{
   height: 3em; 
