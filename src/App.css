@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+/* Imported Fonts */
+/* Roboto Mono */
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+/* Montserrat 600 semibold */
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+*{
+  height: 100%;
+  margin:0;
+  padding:0;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* width */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  height: auto;
+  background-image: url(https://i.ibb.co/Mh7q26j/efa04b39.png);
+  background-repeat:repeat;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation Bar Desktop */
+.navigationBar{
+  background-color: transparent;
+  height: 66px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  background: rgba(53, 69, 64, .4);
+  position:sticky;
+  top: 0;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.navigationBar ul{
+  width: fit-content;
+  display: flex;
+  margin-right: 8%;
+  margin-top: 0;
+  margin-bottom:0;
+  animation: fadeInRight 1.25s ease-in-out;
 }
-
-@keyframes App-logo-spin {
+@keyframes fadeInRight {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateX(18%);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
+}
+
+.navigationBar ul li{
+  margin-left: 3rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  color: #F5F5DC;
+}
+.navigationBar a{
+  color: #F5F5DC;
+  text-decoration: none;
+}
+.link{
+  color: #F5F5DC;
+  cursor: pointer;
+  transition: .18s ease-in-out;
+}
+.navigationBar .resumeBox{
+  border: solid;
+  border-width: .15rem;
+  padding: .3rem;
+  
+}
+.resumeBox:hover{
+  background-color:#485b61;
+}
+.navigationBar ul a:hover{
+  color: #75969F;
+}
+/* Introduction Component Desktop */
+#introductionDiv{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  vertical-align: bottom;
+  margin-top: 66px;
+}
+.myIntro{
+  background: rgba(53, 69, 64, .4);
+  padding: 5%;
+  width: 74%;
+  display: flex;
+  vertical-align: middle;
+}
+.myIntro .introToName{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.75rem;
+  color: #F5F5DC;
+  font-weight: lighter;
+  padding-left: .75%;
+}
+.myIntro .name{
+  color: #F5F5DC;
+  padding: 0;
+  width: 52%;
+}
+.textName{
+  animation: fadeInLeft 1.25s ease-in-out;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.underName{
+  color: rgba(245,245,220, .5);
+}
+.smallUnderName{
+  font-size: 1.5rem;
+  color: #F5F5DC;
+  padding-left: .75%;
+  font-family: 'Montserrat', sans-serif;
+}
+.bigText{
+  font-size: 600%;
+  font-weight: 500;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.myIntro p{
+  width:50%;
+  line-height: 2rem;
+}
+/* About Section Desktop */
+#about{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  vertical-align: bottom;
+  margin-top: 66px; 
+}
+.aboutSection{
+  background: rgba(53, 69, 64, .4);
+  padding: 5%;
+  width: 74%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.portraitPhoto{
+  grid-column: 1/2;
+  margin: auto;
+  width: 70%;
+  height: auto;
+  border-radius: 1.75%;
+}
+.aboutText{
+  grid-column: 2/3;
+  width: 70%;
+  height: auto;
+  font-size: 1.5rem;
+  color: #F5F5DC;
+  padding-left: .75%;
+  line-height: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.aboutTextGap{
+  height: 2rem;
 }
