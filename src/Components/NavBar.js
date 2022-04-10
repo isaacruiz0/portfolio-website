@@ -1,4 +1,5 @@
 import {React, useState, useEffect} from 'react'
+import pdf from "../Resume Pdf/ATS Resume .pdf"
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false)
@@ -21,7 +22,7 @@ function NavBar() {
             <li><a href='#about' className='link'>About</a></li>
             <li><a className='link'>Projects</a></li>
             <li><a className='link'>Contact</a></li>
-            <li><span className='resumeBox link' >Resumé</span></li>
+            <li><a className='resumeBox' href={pdf} target="_blank">Resumé</a></li>
         </ul>
     </nav>
   )

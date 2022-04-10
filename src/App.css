@@ -81,12 +81,15 @@
   border: solid;
   border-width: .15rem;
   padding: .3rem;
-  
+  text-decoration: none;
+  cursor: pointer;
 }
 .resumeBox:hover{
   background-color:#485b61;
+  border-color: #F5F5DC;
+  color: #F5F5DC;
 }
-.navigationBar ul a:hover{
+.link:hover{
   color: #75969F;
 }
 /* Introduction Component Desktop */
@@ -208,7 +211,8 @@
 .mySkills h1{
   color: #F5F5DC;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;  
+  font-weight: 200;
+  font-size: 2.33em;  
   letter-spacing: .33em;
   text-align: center;
 }
@@ -233,7 +237,7 @@
 }
 .iconDiv{
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   cursor: pointer;
   transition: .3s ease-in-out;
