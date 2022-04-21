@@ -1,0 +1,16 @@
+.footerDiv{
+    text-align: center;
+    padding-top: 66px;
+
+    .footerDiv__a{
+    color: rgba(245,245,220, .5);
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    text-decoration: none;
+
+
+    &:hover{
+        color: #F5F5DC;
+    }}
+    
+}

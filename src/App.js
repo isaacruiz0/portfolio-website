@@ -1,8 +1,10 @@
 import './App.css';
 // Components
-import NavBar from './Components/NavBar';
-import Introduction from './Components/Introduction';
-import About from './Components/About';
+import NavBar from './Components/Navbar/Navbar.js';
+import Introduction from './Components/Introduction/Introduction.js';
+import About from './Components/About/About.js'
+import Contact from './Components/Contact/Contact.js';
+import Footer from './Components/Footer/Footer.js'
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <NavBar />
       <Introduction />
       <About />
+      <Contact />
+      <Footer />
 
     </div>
   );

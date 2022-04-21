@@ -1,8 +1,21 @@
 import React from 'react'
+import './About.css'
 
 function About() {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+
+
   return (
-    <div id='about'>
+    <div id='about'className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+    ref={domRef}>
       <section className='aboutSection'>
         <img className='portraitPhoto' src='https://i.ibb.co/k6z3kzv/portrait.jpg'/>
         <div className='aboutInnerDiv'>  
@@ -13,7 +26,8 @@ function About() {
             With that in mind I can become a very reliable and motivated asset for all companies.</p> 
         </div>
         <div className='divider'></div>
-        <div className='mySkills'>
+        <div id='mySkills' className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+    ref={domRef}>
           {/* Languages */}
           <div className='languages skillDivs'>
             <h1>Languages</h1>

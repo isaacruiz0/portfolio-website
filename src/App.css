@@ -15,6 +15,20 @@
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity 1.20s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 /* width */
@@ -26,6 +40,7 @@
   height: auto;
   background-image: url(https://i.ibb.co/Mh7q26j/efa04b39.png);
   background-repeat:repeat;
+  padding-bottom: 66px;
 }
 /* Navigation Bar Desktop */
 .navigationBar{
@@ -40,6 +55,7 @@
 }
 .navigationBar.active{
   background: rgba(53, 69, 64);
+  z-index: 3;
 }
 .navigationBar ul{
   width: fit-content;
@@ -85,7 +101,7 @@
   cursor: pointer;
 }
 .resumeBox:hover{
-  background-color:#485b61;
+  background-color:#4a6168;
   border-color: #F5F5DC;
   color: #F5F5DC;
 }
@@ -179,7 +195,7 @@
 }
 .aboutText{
   grid-column: 2/3;
-  width: 70%;
+  width: 90%;
   height: auto;
   font-size: 1.5rem;
   color: #F5F5DC;
@@ -201,14 +217,14 @@
 }
 /* Skills Section */
 
-.mySkills{
+#mySkills{
   background-color: ;
   grid-column: 1/3;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   height: auto;
 }
-.mySkills h1{
+#mySkills h1{
   color: #F5F5DC;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
@@ -239,7 +255,6 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  cursor: pointer;
   transition: .3s ease-in-out;
 }
 .iconDiv:hover{
@@ -249,4 +264,44 @@
   font-family: 'Montserrat', sans-serif;
   color: #F5F5DC;
   letter-spacing: .1em;
+}
+/* Contact Me Page */
+#contactDiv{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  vertical-align: bottom;
+  margin-top: 66px;
+}
+#contactDiv section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(53, 69, 64, .4);
+  width: 74%;
+  padding: 5%;
+}
+.getInTouch{
+  color: #F5F5DC;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 2.33em;  
+  letter-spacing: .25em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+.contactBox{
+  border: solid;
+  border-width: .15rem;
+  font-size: 1.66rem;
+  padding: .66rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: #F5F5DC;
+}
+.contactBox:hover{
+  background-color:#4a6168;
 }
