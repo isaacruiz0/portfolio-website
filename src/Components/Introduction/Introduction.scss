@@ -1,0 +1,13 @@
+@media screen and (max-width: 900px){
+    .myIntro .introToName{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 6vw;
+        color: #F5F5DC;
+        font-weight: lighter;
+        padding-left: .75%;
+      }
+      .myIntro p{
+        width:100%;
+        line-height: 2rem;
+      }
+}

@@ -1,0 +1,101 @@
+// THIS WILL DICTATE THE NAV BAR UNDER 900PX
+@media screen and (max-width: 900px) {
+    .navigationBar ul{
+        display: none;
+    } 
+    .navigationBar{
+        z-index: 2;
+    }
+    .app_navbar-menu {
+        width: fit-content;
+        margin-right: 2.33vw;
+        border-radius: 50%;
+        position: relative;
+        font-size: 2rem;
+        width: 15%;
+        height: auto;
+        top: 0;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        svg {
+            width: 70%;
+            height: 70%;
+            color: rgba(245,245,220, .5);;
+        }
+    
+        div {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 50;
+    
+            padding: 1rem;
+    
+            width: 80%;
+            height: 100vh;
+    
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+    
+            box-shadow: 0 0 50px rgba(7, 7, 7, 0.5);
+    
+            background: rgba(53, 69, 64);
+
+            overflow: hidden;
+            
+            -webkit-backface-visibility: hidden;
+    
+    
+            svg {
+                width: 10%;
+                height: auto;
+
+                margin: .5rem 1rem;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+    
+                li {
+                    margin: 1rem;
+                    a{
+                        color: var(--gray-color);
+                        text-decoration: none;
+                        font-size: 2rem;
+                        font-weight: 500;
+    
+                        transition: all .3s ease-in-out;
+    
+                    }
+                }
+            }
+    
+        }
+    }
+}
+@media screen and (min-width:900px){
+    .app_navbar-menu{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    .app_navbar-menu {
+        width: fit-content;
+        margin-right: 5vw;
+    }
+} 

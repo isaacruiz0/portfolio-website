@@ -1,0 +1,32 @@
+#projectsDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+    margin-top: 66px;
+
+    .projectsSection{
+        background: rgba(53, 69, 64, .4);
+        padding: 5%;
+        width: 74%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        #leftProjectDiv{
+            grid-column: 1/2;
+            display: flex;
+            justify-content: center;
+            color: #F5F5DC;
+
+        }
+        #rightProjectDiv{
+            grid-column: 2/3;
+            display: flex;
+            justify-content: center;
+            color: #F5F5DC;
+
+        }
+        
+
+    }
+}

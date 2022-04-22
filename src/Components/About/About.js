@@ -1,5 +1,5 @@
 import React from 'react'
-import './About.css'
+import './About.scss'
 
 function About() {
   const [isVisible, setVisible] = React.useState(true);
@@ -26,7 +26,7 @@ function About() {
             With that in mind I can become a very reliable and motivated asset for all companies.</p> 
         </div>
         <div className='divider'></div>
-        <div id='mySkills' className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+        <div id='mySkills' className={`fade-in-section-skills ${isVisible ? 'is-visible' : ''}`}
     ref={domRef}>
           {/* Languages */}
           <div className='languages skillDivs'>

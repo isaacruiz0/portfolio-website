@@ -25,6 +25,18 @@
   transition: opacity 1.20s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
+.fade-in-section-skills {
+  opacity: 0;
+  transform: translateY(10vh);
+  visibility: hidden;
+  transition: opacity .20s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section-skills.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
 .fade-in-section.is-visible {
   opacity: 1;
   transform: none;
@@ -43,6 +55,7 @@
   padding-bottom: 66px;
 }
 /* Navigation Bar Desktop */
+
 .navigationBar{
   background-color: transparent;
   height: 66px;
@@ -51,7 +64,8 @@
   background: rgba(53, 69, 64, .4);
   position:sticky;
   top: 0;
-  transition: .25s ease-in-out;
+  transition: .1s ease-in-out;
+  
 }
 .navigationBar.active{
   background: rgba(53, 69, 64);
@@ -119,22 +133,24 @@
 }
 .myIntro{
   background: rgba(53, 69, 64, .4);
-  padding: 5%;
+  padding: 5vw;
   width: 74%;
   display: flex;
   vertical-align: middle;
 }
 .myIntro .introToName{
   font-family: 'Roboto Mono', monospace;
-  font-size: 1.75rem;
+  font-size: 2vw;
   color: #F5F5DC;
   font-weight: lighter;
   padding-left: .75%;
+  margin-top: 0;
 }
 .myIntro .name{
   color: #F5F5DC;
   padding: 0;
   width: 52%;
+  white-space: nowrap;
 }
 .textName{
   animation: fadeInLeft 1.25s ease-in-out;
@@ -150,18 +166,22 @@
 }
 .underName{
   color: rgba(245,245,220, .5);
+  white-space: wrap;
 }
 .smallUnderName{
   font-size: 1.5rem;
   color: #F5F5DC;
   padding-left: .75%;
   font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
 }
 .bigText{
-  font-size: 600%;
+  font-size : clamp(2rem, 10vw, 5rem);
   font-weight: 500;
+  width: 100%;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+
 }
 .myIntro p{
   width:50%;
@@ -190,7 +210,7 @@
   height: auto;
   border-radius: 1.75%;
   box-shadow: 0px 0px 15px black;
-
+  margin-bottom: 3vw;
 
 }
 .aboutText{
@@ -228,7 +248,6 @@
   color: #F5F5DC;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  font-size: 2.33em;  
   letter-spacing: .33em;
   text-align: center;
 }
@@ -250,15 +269,16 @@
   display: flex;
   flex-direction: column;
   margin-top: 3%;
+  width: fit-content;
 }
 .iconDiv{
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  transition: .3s ease-in-out;
+  transition: .1s ease-in-out;
 }
 .iconDiv:hover{
-  transform: scale(1.33);
+  transform: scale(1.2);
 }
 .iconDiv h4{
   font-family: 'Montserrat', sans-serif;

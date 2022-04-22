@@ -1,0 +1,20 @@
+@media screen and (max-width: 900px){
+.aboutSection{
+    background: rgba(53, 69, 64, .4);
+    padding: 5%;
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+  }
+  .portraitPhoto{
+    margin-top: 3vw;
+    position: relative;
+    z-index: 1;
+  }
+  .aboutText{
+    width: 100%;
+  }
+  .skillDivs{
+    
+  }
+}
