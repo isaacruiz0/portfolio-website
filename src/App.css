@@ -22,7 +22,7 @@
   opacity: 0;
   transform: translateY(10vh);
   visibility: hidden;
-  transition: opacity 1.20s ease-out, transform 1.2s ease-out;
+  transition: opacity .85s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
 .fade-in-section-skills {
