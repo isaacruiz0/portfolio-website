@@ -67,6 +67,8 @@
   transition: .1s ease-in-out;
   overflow: hidden;
   z-index: 5; 
+
+  transition: ease-in-out .33s;
 }
 .navigationBar.active{
   background: rgba(53, 69, 64);
