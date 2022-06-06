@@ -211,14 +211,20 @@
 }
 .portraitPhoto{
   grid-column: 1/2;
+  object-fit: cover;
+
   margin: auto;
   width: 75%;
   height: auto;
   border-radius: 1.75%;
-  box-shadow: 0px 0px 15px black;
   margin-top: auto;
   margin-bottom: auto;
-
+  cursor: pointer;
+  transition: all .25s ease-in;
+}
+.portraitPhoto:hover{
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.406);
+  transform: scale(1.0125);
 }
 .aboutText{
   grid-column: 2/3;

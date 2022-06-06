@@ -23,7 +23,7 @@ function About() {
     <div id='about'className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
     ref={fadeInRef}>
       <section className='aboutSection'>
-        <img className='portraitPhoto' src='https://i.ibb.co/k6z3kzv/portrait.jpg'/>
+        <a href='https://www.linkedin.com/in/isaac-ruiz-6996b3231/'><img className='portraitPhoto' src='https://i.ibb.co/k6z3kzv/portrait.jpg'/></a>
         <div className='aboutInnerDiv'>  
             <p className='aboutText'>My name is Isaac Ruiz and my proudest trait is that I make an effort to be as much of a conscientious person as I can be.
             <div className='aboutTextGap'></div>
