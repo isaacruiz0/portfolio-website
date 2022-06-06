@@ -30,6 +30,8 @@ function About() {
             This allows me to have a natural inclination to sincerely sympathize with a variety of “big-picture” goals that companies strive for. 
             <div className='aboutTextGap'></div> 
             With that in mind I can become a very reliable and motivated asset for all companies.</p> 
+            
+
         </div>
       </section>
     </div>

@@ -10,4 +10,31 @@
         width:100%;
         line-height: 2rem;
       }
+      
+}
+.textIntroDiv{
+
+  a{
+    display: block;
+    margin-left: .75%;
+    font-size: 1.25rem;
+
+    padding-top: 2rem;
+    padding-bottom: 1px;
+
+    color: #F5F5DC;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+    width: fit-content;
+
+    border-bottom: 1px solid #F5F5DC;
+
+    @media screen and (min-width: 900px){
+      &:hover{
+        border: 1px solid #F5F5DC;
+        padding: 1rem;
+
+    } 
+    }
+  }
 }
