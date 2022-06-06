@@ -25,8 +25,9 @@ const Projects = () => {
         <h1>Remembrance</h1>
             <div className='innerProjectDiv' id='leftProjectDiv'>
               <a href='https://inquisitive-sorbet-a52729.netlify.app/' target='_blank'>
-                <img className='heo' src={desktopRemembrance} alt='Desktop version of my Remembrance website' />
+                <img src={desktopRemembrance} alt='Desktop version of my Remembrance website' />
               </a>
+
             </div>
             <div className='innerProjectDiv' id='rightProjectDiv'>
                 <p>
@@ -38,8 +39,14 @@ const Projects = () => {
                   <hr class="space-1" />
                   The user can store unique information by creating personalized cards for any individual.  So that when the time comes, they can be prepared to express how important that one person is. 
                 </p>
-
             </div>
+            <div className='projectLinks'>
+                <a href='https://inquisitive-sorbet-a52729.netlify.app/' target='_blank' className='deployedLink'>
+                    Deployed Link
+              </a>
+                  <a href='https://github.com/isaacruiz0/Front-End-Remembrance' target='_blank'>Front End Repository</a>
+                  <a href='https://github.com/isaacruiz0/Back-End-Remembrance' target='_blank'>Back End Repository</a>
+                </div>
 
         </section>
     </div>

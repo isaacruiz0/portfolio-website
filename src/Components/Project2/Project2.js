@@ -34,7 +34,12 @@ const Projects = () => {
                   <hr class="space-1" />
                   I regularly <span>update</span> and <span>maintain</span> this site's design and functionality to improve the website's user experience.
                 </p>
-
+            </div>
+            <div className='projectLinks'>
+                <a href='https://garage-worx.com/' target='_blank' className='deployedLink'>
+                    Deployed Link
+              </a>
+                  <a href='https://github.com/isaacruiz0/GarageWorx' target='_blank'>Front End Repository</a>
             </div>
 
         </section>
