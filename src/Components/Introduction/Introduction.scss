@@ -16,23 +16,26 @@
 
   a{
     display: block;
+    animation: fadeInLeft 1.25s ease-in-out;
     margin-left: .75%;
     font-size: 1.25rem;
 
     padding-top: 2rem;
     padding-bottom: 1px;
 
-    color: #F5F5DC;
+    color: rgba(245,245,220, .5);
     text-decoration: none;
     transition: ease-in-out .5s;
     width: fit-content;
 
-    border-bottom: 1px solid #F5F5DC;
+    border-bottom: 1px solid rgba(245,245,220, .5);
+    user-select: none;
 
     @media screen and (min-width: 900px){
       &:hover{
         border: 1px solid #F5F5DC;
         padding: 1rem;
+        color: #F5F5DC;
 
     } 
     }
