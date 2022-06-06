@@ -36,7 +36,7 @@ const Projects = () => {
                   <hr class="space-1"/>
                   This app also uses <span>CRUD</span> functionality so the user can have dynamic interactions. 
                   <hr class="space-1" />
-                  By creating personalized cards for any individual the user can store unique information for when the time comes they can be prepared the express how important that one person is. 
+                  The user can store unique information by creating personalized cards for any individual.  So that when the time comes, they can be prepared to express how important that one person is. 
                 </p>
 
             </div>

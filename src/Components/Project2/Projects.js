@@ -22,7 +22,7 @@ const Projects = () => {
     <div id='projects' className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
     ref={fadeInRef}>
         <section className='projectsSection'>
-        <h1>Garege-Worx</h1>
+        <h1>Garage-Worx</h1>
             <div className='innerProjectDiv' id='leftProjectDiv'>
               <a href='https://garage-worx.com/' target='_blank'>
                 <img src={desktopGarage} alt='Desktop version of my Remembrance website' />
@@ -30,13 +30,9 @@ const Projects = () => {
             </div>
             <div className='innerProjectDiv' id='rightProjectDiv'>
                 <p>
-                  I built this with Mongoose, Express, React, and Node aka the <span>MERN</span> stack. 
+                  I built this for a client with Javascript, HTML, CSS within the <span>React</span> framework. 
                   <hr class="space-1" />
-                  With the use of json web tokens and the passport strategy I implemented <span>authentication</span> and <span>authorization</span> for this app.
-                  <hr class="space-1"/>
-                  This app also uses <span>CRUD</span> functionality so the user can have dynamic interactions. 
-                  <hr class="space-1" />
-                  By creating personalized cards for any individual the user can store unique information for when the time comes they can be prepared the express how important that one person is. 
+                  I maintain this site with both design and functional updates that better improve the website's user experience. 
                 </p>
 
             </div>
