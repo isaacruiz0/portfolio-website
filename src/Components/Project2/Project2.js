@@ -1,5 +1,5 @@
 import React from 'react'
-import './Projects.scss'
+import './Project2.scss'
 import desktopGarage from './desktopGarage.jpg'
 import mobileGarage from './mobileGarage.jpg'
 import { useEffect, useRef, useState } from 'react'
@@ -22,7 +22,7 @@ const Projects = () => {
     <div id='projects' className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
     ref={fadeInRef}>
         <section className='projectsSection'>
-        <h1>Garage-Worx</h1>
+        <h1>Garage Worx</h1>
             <div className='innerProjectDiv' id='leftProjectDiv'>
               <a href='https://garage-worx.com/' target='_blank'>
                 <img src={desktopGarage} alt='Desktop version of my Remembrance website' />
@@ -30,9 +30,9 @@ const Projects = () => {
             </div>
             <div className='innerProjectDiv' id='rightProjectDiv'>
                 <p>
-                  I built this for a client with Javascript, HTML, CSS within the <span>React</span> framework. 
+                  Garage Worx is a high ticket service website I built using Javascript, HTML, and CSS within the <span>React</span> framework
                   <hr class="space-1" />
-                  I maintain this site with both design and functional updates that better improve the website's user experience. 
+                  I regularly <span>update</span> and <span>maintain</span> this site's design and functionality to improve the website's user experience.
                 </p>
 
             </div>

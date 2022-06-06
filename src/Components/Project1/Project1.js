@@ -1,5 +1,5 @@
 import React from 'react'
-import './Projects.scss'
+import './Project1.scss'
 import desktopRemembrance from './desktopRemembrance.jpg'
 import mobileRemembrance from './mobileRemembrance.jpg'
 import { useEffect, useRef, useState } from 'react'
@@ -25,7 +25,7 @@ const Projects = () => {
         <h1>Remembrance</h1>
             <div className='innerProjectDiv' id='leftProjectDiv'>
               <a href='https://inquisitive-sorbet-a52729.netlify.app/' target='_blank'>
-                <img src={desktopRemembrance} alt='Desktop version of my Remembrance website' />
+                <img className='heo' src={desktopRemembrance} alt='Desktop version of my Remembrance website' />
               </a>
             </div>
             <div className='innerProjectDiv' id='rightProjectDiv'>

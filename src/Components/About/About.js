@@ -25,7 +25,7 @@ function About() {
       <section className='aboutSection'>
         <a href='https://www.linkedin.com/in/isaac-ruiz-6996b3231/' target='_blank' className='portraitPhotoContainer'><img className='portraitPhoto' src='https://i.ibb.co/k6z3kzv/portrait.jpg'/></a>
         <div className='aboutInnerDiv'>  
-            <p className='aboutText'>My name is Isaac Ruiz and my proudest trait is that I make an effort to be as much of a conscientious person as I can be.
+            <p className='aboutText'>My name is Isaac Ruiz and the trait I am most proud of is that I make an effort to be as much of a conscientious person I can be.
             <div className='aboutTextGap'></div>
             This allows me to have a natural inclination to sincerely sympathize with a variety of “big-picture” goals that companies strive for. 
             <div className='aboutTextGap'></div> 
