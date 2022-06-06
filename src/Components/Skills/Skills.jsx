@@ -2,6 +2,8 @@ import React from 'react'
 import { useEffect, useState, useRef } from 'react';
 import './skills.scss'
 
+import sass from './sass.png'
+
 function Skills() {
     const [isVisible, setVisible] = useState(true);
     const fadeInRef = useRef();
@@ -63,6 +65,10 @@ function Skills() {
                 <div className='iconDiv'>
                   <h4>Express</h4>
                   <img class="icons" src="https://i.ibb.co/rKBkxtv/expressjs-icon.png" alt="javascript icon" />
+                </div>
+                <div className='iconDiv'>
+                  <h4>SASS</h4>
+                  <img class= "icons" src={sass} />
                 </div>
                 <div className='iconDiv'>
                   <h4>Django REST</h4>
