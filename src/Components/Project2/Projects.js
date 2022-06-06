@@ -24,7 +24,7 @@ const Projects = () => {
         <section className='projectsSection'>
         <h1>Garege-Worx</h1>
             <div className='innerProjectDiv' id='leftProjectDiv'>
-              <a href='garage-worx.com' target='_blank'>
+              <a href='https://garage-worx.com/' target='_blank'>
                 <img src={desktopGarage} alt='Desktop version of my Remembrance website' />
               </a>
             </div>
