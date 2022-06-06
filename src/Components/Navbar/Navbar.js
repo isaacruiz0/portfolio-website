@@ -11,7 +11,6 @@ function NavBar() {
   const [toggle, setToggle] = useState(false)
 
   const changeBackground = () =>{
-    console.log(window.scrollY)
     if(window.scrollY >= 66){
       setNavbar(true)
     }
@@ -26,10 +25,11 @@ function NavBar() {
     <nav className={navbar ? 'navigationBar active' : 'navigationBar'}>
         <ul>
             <li><a href='#about' className='link'>About</a></li>
-            <li><a  className='link'>Projects</a></li>
-            <li><a href='#contactDiv'className='link'>Contact</a></li>
-            <li><a className='resumeBox' href={pdf} target="_blank">Resumé</a></li>
+            <li><a href='#projects' className='link' >Projects</a></li>
+            <li><a href='#contact'className='link'>Contact</a></li>
+            <li><a className='linkBox' href={pdf} target="_blank">Resumé</a></li>
         </ul>
+        <h4 className='mobileProjectLink' ><a href='#projects' className='linkBox'>Projects</a></h4>
         <div className='app_navbar-menu'>
               <BiMenuAltRight  onClick={() => setToggle(true)}/>
               {/* FRAMER MOTION -> if toggle is true then it will render the mobile version of the menu */}
@@ -42,7 +42,7 @@ function NavBar() {
               >
                   <HiX onClick={() => setToggle(false)} />
                   <ul >
-                  {['About', 'Projects', 'Contact'].map((eachItem) =>
+                  {['about', 'projects', 'contact'].map((eachItem) =>
                     <li onClick={()=> setToggle(false)} key={`${eachItem}`}>
                       <a href={`#${eachItem}`}>{eachItem}</a>
                     </li>)}

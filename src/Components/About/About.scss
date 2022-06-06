@@ -12,9 +12,19 @@
     z-index: 1;
   }
   .aboutText{
+    margin-top: 8vw;
     width: 100%;
   }
-  .skillDivs{
-    
+
+  #mySkills h1{
+    color: #F5F5DC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    width: 100%;
+    letter-spacing: .33em;
+    text-align: center;
+    font-size : clamp(1rem, 8vw, 3.66rem);
+    margin-bottom: 15%;
   }
+
 }

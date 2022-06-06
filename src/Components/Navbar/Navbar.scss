@@ -5,25 +5,41 @@
     } 
     .navigationBar{
         z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        .mobileProjectLink{
+            display: block;
+            .linkBox{
+                margin-left: 7.5vw;
+                font-family: 'Roboto Mono', monospace;
+                user-select: none;
+                color: rgba(245,245,220, .5);
+                &:hover{
+                    background-color: transparent;
+                    border-color: #F5F5DC;
+                    color: #F5F5DC;
+                  }
+            }
+        } 
     }
     .app_navbar-menu {
         width: fit-content;
-        margin-right: 2.33vw;
-        border-radius: 50%;
         position: relative;
-        font-size: 2rem;
-        width: 15%;
+        font-size: 3rem;
         height: auto;
         top: 0;
     
         display: flex;
         justify-content: center;
         align-items: center;
+
+        margin-right: 5.33vw;
     
         svg {
-            width: 70%;
-            height: 70%;
-            color: rgba(245,245,220, .5);;
+            width: 100%;
+            height: auto;
+
+            color: rgba(245,245,220, .5);
         }
     
         div {
@@ -73,10 +89,10 @@
                 li {
                     margin: 1rem;
                     a{
-                        color: var(--gray-color);
                         text-decoration: none;
                         font-size: 2rem;
                         font-weight: 500;
+                        text-transform: capitalize;
     
                         transition: all .3s ease-in-out;
     
@@ -93,9 +109,3 @@
     }
     
 }
-@media screen and (max-width: 500px){
-    .app_navbar-menu {
-        width: fit-content;
-        margin-right: 5vw;
-    }
-} 
