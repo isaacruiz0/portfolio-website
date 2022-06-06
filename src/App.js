@@ -5,8 +5,8 @@ import NavBar from './Components/Navbar/Navbar.js';
 import Introduction from './Components/Introduction/Introduction.js';
 import About from './Components/About/About.js'
 import Skills from './Components/Skills/Skills.jsx'
-import Project1 from './Components/Project1/Projects';
-import Project2 from './Components/Project2/Projects'
+import Project1 from './Components/Project1/Project1';
+import Project2 from './Components/Project2/Project2'
 import Contact from './Components/Contact/Contact.js';
 import Footer from './Components/Footer/Footer.js'
 
