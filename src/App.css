@@ -209,6 +209,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.portraitPhotoContainer{
+  display: flex;
+  justify-content: center;
+}
 .portraitPhoto{
   grid-column: 1/2;
   object-fit: cover;
