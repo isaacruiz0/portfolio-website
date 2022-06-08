@@ -132,14 +132,19 @@
         @media screen and (min-width: 900px){
             text-align: center;
         }
+        @media screen and (max-width: 420px) {
+            padding: .6rem;
+            font-size: .9rem;
+            
+        }
 
         align-items: center;
         
-        border: 2px solid #F5F5DC;
+        border: 2px solid rgba(245,245,220, .5);
         font-size: clamp(1rem, 1.2rem, 3rem);
         letter-spacing: 1px;
         transition: ease-in-out .25s;
-        color: #F5F5DC;
+        color: rgba(245,245,220, .5);
         text-decoration: none;
         font-weight: bold;
 
@@ -147,7 +152,8 @@
         cursor: pointer;
         @media screen and (min-width: 900px){
             &:hover{
-                background-color:#4a6168;
+                border: 2px solid #F5F5DC;
+                color: #F5F5DC;
             }
         }
     }

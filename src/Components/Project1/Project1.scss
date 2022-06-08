@@ -133,6 +133,7 @@
         width: fit-content;
         padding: 1rem;
 
+
         align-items: center;
         
         border: 2px solid #F5F5DC;
@@ -147,9 +148,6 @@
         cursor: pointer;
         @media screen and (min-width: 900px){
             text-align: center;
-            &:hover{
-                background-color:#4a6168;
-            }
         }
     }
 }
