@@ -1,11 +1,22 @@
 import React from 'react'
 import './Contact.scss'
 import { useEffect, useState, useRef } from 'react';
+// E M A I L    N P M    P A C K A G E
+import emailjs from '@emailjs/browser';
 
 function Contact() {
 
   const [isVisible, setVisible] = useState(true);
+  const [messageSent, setMessageSent] = useState(true);
+
   const fadeInRef = useRef();
+  const form = useRef();
+
+  const showSuccess = () =>{
+    setMessageSent(false)
+    setTimeout(()=>{setMessageSent(true)}, 3000)
+  }
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       entries => {
@@ -15,15 +26,46 @@ function Contact() {
         })
       },{threshold: .25})
     observer.observe(fadeInRef.current)
-
   }, []);
+
+  const sendEmail = (e) => {
+    e.preventDefault(); 
+
+    // emailjs.sendForm('service_o017l1j','template_swg0spp',form.current, '898C00gOMfvROebwl')
+    // .then((result) => {
+    //   console.log(result.text)
+    // }, (error) => {
+    //   console.log(error.text)
+    // });
+
+    e.target.reset()
+  }
+
 
   return (
     <div id='contact' className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
     ref={fadeInRef}>
         <section>
-            <h1 className='getInTouch'>Want to get in touch?</h1>
-            <a className='contactBox' href='mailto:isaac.ruiz.us@gmail.com' target="_blank">Contact Me</a>
+          <h2>Shoot me a message!</h2>
+          <form onSubmit={sendEmail} ref={form}>
+            <div className='inputGroup'>
+              <input type="name" name='user_name' className='form-control'/>
+              <label>Name</label>
+            </div>
+
+            <div className='inputGroup'>
+              <input type="email" name='user_email' className='form-control'/>
+              <label>Email</label>
+            </div>
+
+            <div className='inputGroup'>
+              <textarea name='message' rows='5' className='form-control' />
+              <label>Message</label>
+            </div>
+            <input type='submit' value='Send Message' className='form-control btn' onClick={showSuccess}/>
+            <p className={`${messageSent ? 'displayNone' : ''}`}>Message Sent!</p>
+            
+          </form>
         </section>
     </div>
   )

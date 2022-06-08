@@ -1,5 +1,139 @@
-@media screen and (max-width: 500px){
-    .getInTouch{
-        font-size: 1.5rem;
+#contact{
+    section{
+        position: relative;
+        p{
+            background-color: rgba(53, 69, 64);
+            color: #F5F5DC;
+            border: .5px solid #F5F5DC;
+            padding: 3%;
+
+            font-weight: 300;
+            text-align: center;
+            border-radius: 2.5px;
+
+            width: 50%;
+
+
+            letter-spacing: 1px;
+            -webkit-animation: fadeInTop 1s ease-in-out;
+            animation: fadeInTop 1s ease-in-out;
+            
+            transition: all 1.5s;
+            position: absolute;
+            top: 95%;
+
+
+        }
+        @keyframes fadeInTop {
+            from {
+              opacity: 0;
+              transform: translateY(25%);
+            }
+            to {
+              opacity: 1;
+            }
+          }
+        .displayNone{
+            opacity: 0;
+            transition: all 1000ms linear;
+        }
+        h2{
+            font-weight: 300;
+            width: 100%;
+            letter-spacing: .15em;
+            text-align: center;
+            font-size : clamp(.25rem, 5vw, 3.66rem);            
+            color: #F5F5DC;
+            
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+
+            label{
+                font-size: clamp(1rem, 1.5rem, 3rem);
+                color: rgba(245,245,220, .5);
+                font-family: 'Roboto Mono', monospace;
+
+                outline: none;
+                transition: ease-in-out .15s;
+            }
+
+            .inputGroup{
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 10px;
+                input{
+                    background-color: rgba(53, 69, 64);
+                    border: none;
+                    border-radius: 1px;
+                    border-bottom: .5px solid #F5F5DC;
+                    caret-color: #F5F5DC;
+    
+                    outline: none;
+                    color: #F5F5DC;
+                    padding: .5rem;
+
+                    font-size: 1.2rem;
+                    
+                }
+                input:focus + label {
+                    color: #F5F5DC;
+                }
+          
+                textarea{
+                    background-color: rgba(53, 69, 64);
+                    border: none;
+                    border-radius: 1px;
+                    border-bottom: .5px solid #F5F5DC;
+                    outline: none;
+
+                    font-size: 1.2rem;
+    
+                    resize: none;
+                    caret-color: #F5F5DC;
+                    color: #F5F5DC;
+                    padding: .5rem;
+                }
+                textarea:focus + label {
+                    color: #F5F5DC;
+                }
+            }
+            input[type=submit]{
+                margin-top: 20px;
+                padding: 5%;
+                background: rgba(53, 69, 64);
+                border: none;
+                border-radius: 2px;
+                
+
+                font-size: clamp(1rem, 1.5rem, 3rem);
+                color: rgba(245,245,220, .5);
+                font-family: 'Roboto Mono', monospace;
+                cursor: pointer;
+                &:hover{
+                    color: #F5F5DC;
+                }
+            }
+        }
     }
-} 
+}
+@media screen and (min-width: 900px){
+    #contact{
+        section{
+            p{
+                padding: 2%;
+                width: fit-content;
+                top: 90%;
+            }
+            form{
+                width: 75%;
+                input[type=submit]{
+                    padding: 2%;
+                }
+            }
+        }
+    }
+}
