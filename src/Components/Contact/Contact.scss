@@ -137,6 +137,10 @@
                 background: rgba(53, 69, 64);
                 border: none;
                 border-radius: 2px;
+                @media screen and (max-width: 900px){
+                    border-radius: 0px;
+                    font-size: 1.125rem;
+                }
                 
 
                 font-size: clamp(1rem, 1.5rem, 3rem);
