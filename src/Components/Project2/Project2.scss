@@ -126,9 +126,12 @@
         display: flex;
         height: fit-content;
         width: fit-content;
-        padding: 1rem;
 
-        text-align: center;
+
+        text-align: left;
+        @media screen and (min-width: 900px){
+            text-align: center;
+        }
 
         align-items: center;
         

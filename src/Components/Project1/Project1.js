@@ -44,8 +44,8 @@ const Projects = () => {
                 <a href='https://inquisitive-sorbet-a52729.netlify.app/' target='_blank' className='deployedLink'>
                     Deployed Link
               </a>
-                  <a href='https://github.com/isaacruiz0/Front-End-Remembrance' target='_blank'>Front End Repository</a>
-                  <a href='https://github.com/isaacruiz0/Back-End-Remembrance' target='_blank'>Back End Repository</a>
+                  <a href='https://github.com/isaacruiz0/Front-End-Remembrance' target='_blank' className='repoLink'>Front End Repository</a>
+                  <a href='https://github.com/isaacruiz0/Back-End-Remembrance' target='_blank' className='repoLink'>Back End Repository</a>
                 </div>
 
         </section>
