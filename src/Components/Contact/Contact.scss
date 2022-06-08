@@ -1,6 +1,25 @@
 #contact{
     section{
         position: relative;
+        h3{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 35%; 
+            margin-top: 0;
+            font-size: clamp(1rem, 1.25rem, 3rem);
+            color: rgba(245,245,220, .5);
+            font-family: 'Roboto Mono', monospace;
+            cursor: pointer;
+            svg{
+                font-size: clamp(1rem, 2rem, 3rem);
+            }
+            &:hover{
+                color: #F5F5DC; 
+                transition: ease-in-out .15s;
+            }
+        }
         p{
             background-color: rgba(53, 69, 64);
             color: #F5F5DC;

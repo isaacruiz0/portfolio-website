@@ -1,6 +1,7 @@
 import React from 'react'
 import './Contact.scss'
 import { useEffect, useState, useRef } from 'react';
+import {AiOutlineMail} from 'react-icons/ai'
 // E M A I L    N P M    P A C K A G E
 import emailjs from '@emailjs/browser';
 
@@ -47,6 +48,7 @@ function Contact() {
     ref={fadeInRef}>
         <section>
           <h2>Shoot me a message!</h2>
+          <h3 href='mailto:isaac.ruiz.us@gmail.com' ><AiOutlineMail/> <span>isaac.ruiz.us@gmail.com</span></h3>
           <form onSubmit={sendEmail} ref={form}>
             <div className='inputGroup'>
               <input type="name" name='user_name' className='form-control'/>
