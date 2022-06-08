@@ -48,7 +48,7 @@ function Contact() {
     ref={fadeInRef}>
         <section>
           <h2>Shoot me a message!</h2>
-          <h3 href='mailto:isaac.ruiz.us@gmail.com' ><AiOutlineMail/> <span>isaac.ruiz.us@gmail.com</span></h3>
+          <a href='mailto:isaac.ruiz.us@gmail.com' ><AiOutlineMail/> <span>isaac.ruiz.us@gmail.com</span></a>
           <form onSubmit={sendEmail} ref={form}>
             <div className='inputGroup'>
               <input type="name" name='user_name' className='form-control'/>

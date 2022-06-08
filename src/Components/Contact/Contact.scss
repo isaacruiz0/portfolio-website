@@ -1,19 +1,23 @@
 #contact{
     section{
         position: relative;
-        h3{
+        a{
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 2vw;
+            
+            margin: 1.5rem;
 
-            width: 35%; 
-            margin-top: 0;
-            font-size: clamp(1rem, 1.25rem, 3rem);
+            text-decoration: none;
+
+            width: 100%;
+            font-size: clamp(.5vw, 4vw,10vw);
             color: rgba(245,245,220, .5);
             font-family: 'Roboto Mono', monospace;
             cursor: pointer;
             svg{
-                font-size: clamp(1rem, 2rem, 3rem);
+                font-size: clamp(.5vw, 3.75vw,5vw);
             }
             &:hover{
                 color: #F5F5DC; 
@@ -62,7 +66,8 @@
             letter-spacing: .15em;
             text-align: center;
             font-size : clamp(.25rem, 5vw, 3.66rem);            
-            color: #F5F5DC;
+            color: #F5F5dC;
+            margin-bottom: 0;
             
         }
         form{
@@ -142,6 +147,21 @@
 @media screen and (min-width: 900px){
     #contact{
         section{
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2vw;
+    
+                width: 100%;
+                font-size: clamp(.5vw, 2.25vw, 8vw);
+                color: rgba(245,245,220, .5);
+                font-family: 'Roboto Mono', monospace;
+                cursor: pointer;
+                svg{
+                    font-size: clamp(.5vw, 2.5vw,5vw);
+                }
+            }
             p{
                 padding: 2%;
                 width: fit-content;
@@ -151,6 +171,9 @@
                 width: 75%;
                 input[type=submit]{
                     padding: 2%;
+                }
+                label{
+                    font-size: clamp(1rem, 2rem, 3rem);
                 }
             }
         }
