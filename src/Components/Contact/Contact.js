@@ -64,7 +64,7 @@ function Contact() {
               <textarea name='message' rows='5' className='form-control' />
               <label>Message</label>
             </div>
-            <input type='submit' value='Send Message' className='form-control btn' onClick={showSuccess}/>
+            <input type='submit' value='Send Message' className='submitButton' onClick={showSuccess}/>
             <p className={`${messageSent ? 'displayNone' : ''}`}>Message Sent!</p>
             
           </form>
