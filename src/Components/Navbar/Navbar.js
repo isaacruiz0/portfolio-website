@@ -1,5 +1,5 @@
 import {React, useState, useEffect} from 'react'
-import pdf from '../Resume Pdf/ATS Resume .pdf'
+import pdf from '../Resume Pdf/Isaac-Ruiz-Resume.docx.pdf'
 import { HiX } from 'react-icons/hi';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { motion } from "framer-motion"
