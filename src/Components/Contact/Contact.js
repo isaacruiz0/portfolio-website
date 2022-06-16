@@ -32,12 +32,12 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault(); 
 
-    // emailjs.sendForm('service_o017l1j','template_swg0spp',form.current, '898C00gOMfvROebwl')
-    // .then((result) => {
-    //   console.log(result.text)
-    // }, (error) => {
-    //   console.log(error.text)
-    // });
+    emailjs.sendForm('service_o017l1j','template_swg0spp',form.current, '898C00gOMfvROebwl')
+    .then((result) => {
+      console.log(result.text)
+    }, (error) => {
+      console.log(error.text)
+    });
 
     e.target.reset()
   }
