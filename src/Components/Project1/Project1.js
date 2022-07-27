@@ -1,7 +1,6 @@
 import React from 'react'
 import './Project1.scss'
 import desktopRemembrance from './desktopRemembrance.jpg'
-import mobileRemembrance from './mobileRemembrance.jpg'
 import { useEffect, useRef, useState } from 'react'
 
 const Projects = () => {

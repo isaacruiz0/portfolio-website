@@ -13,6 +13,7 @@ function Contact() {
   const fadeInRef = useRef();
   const form = useRef();
 
+  // This will appear after an email is sent notifying the user that their email was sent
   const showSuccess = () =>{
     setMessageSent(false)
     setTimeout(()=>{setMessageSent(true)}, 3000)

@@ -1,7 +1,6 @@
 import React from 'react'
 import './Project2.scss'
 import desktopGarage from './desktopGarage.jpg'
-import mobileGarage from './mobileGarage.jpg'
 import { useEffect, useRef, useState } from 'react'
 
 const Projects = () => {
