@@ -2,6 +2,7 @@ import './App.css';
 import { useEffect } from 'react';
 // Components
 import NavBar from './Components/Navbar/Navbar.js';
+import NavbarMobile from './Components/Navbar/NavbarMobile';
 import Introduction from './Components/Introduction/Introduction.js';
 import About from './Components/About/About.js'
 import Skills from './Components/Skills/Skills.jsx'
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <NavbarMobile />
       <Introduction />
       <About />
       <Skills />

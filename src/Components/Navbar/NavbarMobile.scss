@@ -1,0 +1,39 @@
+.bottomNavBar{
+    background-color: rgb(53, 69, 64);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 5;
+    .mobileBottomMenu{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0;
+        list-style: none;
+        font-family: 'Roboto Mono', monospace;
+        li{
+            .link{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &:focus{
+                    color: #F5F5DC;
+                }
+            }
+            .linkIcons{
+                color: #F5F5DC;
+                font-size: .85rem;
+                
+
+            }
+
+        }
+    }
+}
+@media screen and (min-width: 600px){
+    .bottomNavBar{
+        display: none;
+    }
+}

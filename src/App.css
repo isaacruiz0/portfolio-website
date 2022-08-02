@@ -17,6 +17,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+body{
+  background-color: #263430;
+}
 
 .fade-in-section {
   opacity: 0;
@@ -68,10 +71,10 @@
   overflow: hidden;
   z-index: 5; 
 
-  transition: ease-in-out .25s;
+  transition: ease-in-out .5s;
 }
 .navigationBar.disappear{
-  opacity: 0;
+  transform: translateY(-100px);
   z-index: 5;
 }
 .navigationBar ul{
@@ -101,6 +104,11 @@
   font-family: 'Roboto Mono', monospace;
   color: #F5F5DC;
 }
+@media screen and (max-width: 800px){
+  .navigationBar ul li{
+    font-size: 1.2rem;
+  }
+}
 .mobileProjectLink{
   display: none;
 }
@@ -127,8 +135,10 @@
   border-color: #F5F5DC;
   color: #F5F5DC;
 }
-.link:hover{
-  color: #75969F;
+@media screen and (min-width: 600px){
+  .link:hover{
+    color: #75969F;
+  }
 }
 /* Introduction Component Desktop */
 #introductionDiv{

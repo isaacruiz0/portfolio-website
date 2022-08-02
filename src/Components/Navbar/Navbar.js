@@ -1,8 +1,5 @@
-import {React, useState, useEffect} from 'react'
+import {React, useState, useEffect} from 'react'  
 import pdf from '../Resume Pdf/Isaac-Ruiz-Resume.docx.pdf'
-import { HiX } from 'react-icons/hi';
-import { BiMenuAltRight } from 'react-icons/bi';
-import { motion } from "framer-motion"
 import './Navbar.scss'
 import {Link} from 'react-scroll'
 
@@ -40,32 +37,8 @@ function NavBar() {
             <li><Link className='link' to="projects" spy={true} smooth={true} offset={-100} duration={750}>Projects</Link></li>
             <li><Link className='link' to="contact" spy={true} smooth={true} offset={-100} duration={750}>Contact</Link></li>
             <li><a className='linkBox' href={pdf} target="_blank" >Resumé</a></li>
-        </ul>
-        <h4 className='mobileProjectLink' ><a href='#projects' className='linkBox'>Projects</a></h4>
-        <div className='app_navbar-menu'>
-              <BiMenuAltRight  onClick={() => setToggle(true)}/>
-              {/* FRAMER MOTION -> if toggle is true then it will render the mobile version of the menu */}
-              {toggle && (
-                // WHEN TOGGLE IS TRUE IT WILL CREATE A SPECIAL MOTION DIV THAT HAS COOL PROPERTIES
-                <motion.div
-                initial={{x:'500'}}
-                animate={{x:0}}
-                transition={{ duration: 1, ease: 'easeOut' }}
-              >
-                  <HiX className='exitMenu' onClick={() => setToggle(false)} style={{opacity: toggle ? '1' : '0'} } />
-                  <ul >
-                  {['about', 'projects', 'contact'].map((eachItem) =>
-                    <li onClick={()=> setToggle(false)} key={`${eachItem}`}>
-                      <a href={`#${eachItem}`} className='mobileLinks' style={{opacity: toggle ? '1' : '0'}}>{eachItem}</a>
-                    </li>)}
-                    <li>
-                      <a href={pdf} target="_blank">Resumé</a>  
-                    </li> 
-                  </ul>
-                </motion.div>
-              )
-              }
-            </div>
+        </ul>        
+        <h4 className='mobileProjectLink' ><a href={pdf} target="_blank" className='linkBox'>Resumé</a></h4>
     </nav>
   )
 }
