@@ -61,17 +61,17 @@
   height: 66px;
   display: flex;
   justify-content: flex-end;
-  background: rgba(53, 69, 64, .4);
+  background: rgb(53, 69, 64);
   position:sticky;
   top: 0;
   transition: .1s ease-in-out;
   overflow: hidden;
   z-index: 5; 
 
-  transition: ease-in-out .20s;
+  transition: ease-in-out .25s;
 }
-.navigationBar.active{
-  background: rgba(53, 69, 64);
+.navigationBar.disappear{
+  opacity: 0;
   z-index: 5;
 }
 .navigationBar ul{
