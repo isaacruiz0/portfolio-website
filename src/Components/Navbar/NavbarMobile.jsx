@@ -25,7 +25,7 @@ function NavbarMobile() {
                 
                 </li>
                 <li>
-                    <Link className='link' to="contact" spy={true} smooth={true} offset={-100} duration={750}>
+                    <Link className='link' to="contact" spy={true} smooth={true} offset={-30} duration={750}>
                         <FontAwesomeIcon icon={faEnvelopeOpen}  className='linkIcons'/>
                         <span>Contact</span>
                     </Link>
