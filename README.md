@@ -4,7 +4,7 @@ A summary and display of both my personal and technical side
 
 ## Description
 
-Here youc an see my personal and professional projects and the tools I used to build them.
+Here you can see my personal and professional projects and the tools I used to build them.
 
 ## Deployed Link
 
