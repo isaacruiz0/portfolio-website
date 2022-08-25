@@ -8,6 +8,7 @@ import About from './Components/About/About.js'
 import Skills from './Components/Skills/Skills.jsx'
 import Project1 from './Components/Project1/Project1';
 import Project2 from './Components/Project2/Project2'
+import Project3 from './Components/Project3/Project3'
 import Contact from './Components/Contact/Contact.js';
 import Footer from './Components/Footer/Footer.js'
 
@@ -24,6 +25,7 @@ function App() {
       <Skills />
       <Project1 />
       <Project2 />
+      <Project3 />
       <Contact />
       <Footer />
     </div>
