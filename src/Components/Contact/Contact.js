@@ -32,7 +32,7 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault(); 
-
+    showSuccess()
     emailjs.sendForm('service_o017l1j','template_swg0spp',form.current, '898C00gOMfvROebwl')
     .then((result) => {
       console.log(result.text)
@@ -52,20 +52,20 @@ function Contact() {
           <a href='mailto:isaac.ruiz.us@gmail.com' ><AiOutlineMail/> <span>isaac.ruiz.us@gmail.com</span></a>
           <form onSubmit={sendEmail} ref={form}>
             <div className='inputGroup'>
-              <input type="name" name='user_name' className='form-control'/>
+              <input type="name" name='user_name' className='form-control' required="true"/>
               <label>Name</label>
             </div>
 
             <div className='inputGroup'>
-              <input type="email" name='user_email' className='form-control'/>
+              <input type="email"name='user_email' required="true" className='form-control'/>
               <label>Email</label>
             </div>
 
             <div className='inputGroup'>
-              <textarea name='message' rows='5' className='form-control' />
+              <textarea name='message' rows='5' className='form-control' required="true"/>
               <label>Message</label>
             </div>
-            <input type='submit' value='Send Message' className='submitButton' onClick={showSuccess}/>
+            <input type='submit' value='Send Message' className='submitButton'/>
             <p className={`${messageSent ? 'displayNone' : ''}`}>Message Sent!</p>
             
           </form>
