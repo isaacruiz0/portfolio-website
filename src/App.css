@@ -148,6 +148,7 @@ body{
   justify-content: center;
   vertical-align: bottom;
   margin-top: 66px;
+  
 }
 .myIntro{
   background: rgba(53, 69, 64, .4);
@@ -155,6 +156,7 @@ body{
   width: 74%;
   display: flex;
   vertical-align: middle;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.035);
 }
 .myIntro .introToName{
   font-family: 'Roboto Mono', monospace;
@@ -220,6 +222,7 @@ body{
   width: 74%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.035);
 }
 .portraitPhotoContainer{
   display: flex;
@@ -274,6 +277,7 @@ body{
   height: auto;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.035);
 }
 #mySkills h1{
   color: #F5F5DC;
@@ -338,6 +342,7 @@ body{
   background-color: rgba(53, 69, 64, .4);
   width: 74%;
   padding: 5%;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.035);
 }
 .getInTouch{
   color: #F5F5DC;
